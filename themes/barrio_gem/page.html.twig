@@ -3,23 +3,27 @@
   <nav{{navbar_attributes}}>
     {% if container_navbar %}
       <div class="container">
-      {% endif %}
-      {{ page.header }}
-      {% if page.primary_menu %}
-        <button aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="CollapsingNavbar">
-          {{ page.primary_menu }}
+        <div class="row justify-content-center">
+          <div class="col-12">
+            {% endif %}
+            {{ page.header }}
+            {% if page.primary_menu %}
+              <button aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                {{ page.primary_menu }}
+              </div>
+            {% endif %}
+            {% if container_navbar %}
+          </div>
         </div>
-      {% endif %}
-      {% if container_navbar %}
       </div>
     {% endif %}
   </nav>
 {% endblock %}
 {% block content %}
-  <div id="main" class="{{ container }}">
+  <main id="main">
     <div class="row row-offcanvas row-offcanvas-left clearfix">
       <main{{content_attributes}}>
         <section class="section">
@@ -28,7 +32,7 @@
         </section>
       </main>
     </div>
-  </div>
+  </main>
 {% endblock %}
 {% block footer %}
   <div class="{{ container }}">
