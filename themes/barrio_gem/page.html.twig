@@ -82,11 +82,28 @@
   </main>
 {% endblock %}
 {% block footer %}
-  <div class="{{ container }}">
-    {% if page.footer %}
-      <div class="site-footer__top clearfix">
-        {{ page.footer }}
-      </div>
-    {% endif %}
-  </div>
+        <footer>
+          <div class="{{ container }}">
+            {% if page.footer_first or page.footer_second %}
+              <div class="row">
+                {%if page.footer_first %}
+                  <div class="col-sm-6">
+                    <div class="row">
+                    {{ page.footer_first }}
+                    </div>
+                  </div>
+                {% endif %}
+
+                {%if page.footer_second %}
+                  <div class="col-sm-6">
+                    <div class="row">
+                    {{ page.footer_second }}
+                    </div>
+                  </div>
+                {% endif %}
+                
+              </div>
+            {% endif %}
+          </div>
+        </footer>
 {% endblock %}

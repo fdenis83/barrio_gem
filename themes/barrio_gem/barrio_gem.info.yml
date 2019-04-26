@@ -18,7 +18,8 @@ regions:
   secondary_menu: 'Secondary menu'
   primary_menu: "Primary menu"
   content: Content
-  footer: "Footer"
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
 
 # Information added by Drupal.org packaging script on 2019-02-28
 version: '8.x-4.22'
