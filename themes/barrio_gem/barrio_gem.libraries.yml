@@ -19,6 +19,10 @@ bootstrap_cdn:
   css:
     component:
       //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
+fontawesome_cdn:
+  css:
+    component:
+    //stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: {}
 color.preview:
   version: VERSION
   css:

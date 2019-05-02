@@ -6,8 +6,9 @@ description: 'Basic structure for a Bootstrap Barrio SubTheme.'
 base theme: bootstrap_barrio
 
 libraries:
+  - barrio_gem/fontawesome_cdn
   - barrio_gem/bootstrap
-  - barrio_gem/global-styling
+  - barrio_gem/global-styling  
 
 regions:
   top_header: 'Top Header'
