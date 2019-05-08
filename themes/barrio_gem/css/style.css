@@ -265,11 +265,11 @@ main::after {
 
 
 
-#home .banner-layer2 {
+.page-node-1 .banner-layer2 {
     background-position: -638px -654px;
 }
 
-#home .banner-layer3 {
+.page-node-1 .banner-layer3 {
     background: url(../img/banner_home_girl.png) no-repeat;
     background-position: 34% 12%;
     position: absolute;
@@ -279,7 +279,7 @@ main::after {
     transform: scale(.8);
 }
 
-#home .banner-main {
+.page-node-1 .banner-main {
     background-image: url(../img/banner_home_background.png);
     background-repeat: no-repeat;
     background-position: 30% 10%;
@@ -289,7 +289,7 @@ main::after {
     left: 0;
 }
 
-#about .banner-layer3 {
+.page-node-2 .banner-layer3 {
     background: url(../img/Banner_AboutUs_people.png) no-repeat;
     position: absolute;
     bottom: 0;
@@ -298,7 +298,7 @@ main::after {
     background-position: 32% 14%;
 }
 
-#about .banner-main {
+.page-node-2 .banner-main {
     background-image: url(../img/Banner_AboutUs_background.jpg);
     background-repeat: no-repeat;
     background-position: 0% 60%;
@@ -307,7 +307,7 @@ main::after {
     position: absolute;
 }
 
-#products .banner-layer3 {
+.page-node-3 .banner-layer3 {
     background: url(../img/Banner_Products_people.png) no-repeat;
     position: absolute;
     bottom: 0;
@@ -318,7 +318,7 @@ main::after {
 
 }
 
-#products .banner-main {
+.page-node-3 .banner-main {
     background-image: url(../img/Banner_Products_background.jpg);
     background-repeat: no-repeat;
     background-position: 0% 60%;
@@ -327,7 +327,7 @@ main::after {
     position: absolute;
 }
 
-#services .banner-layer3 {
+.page-node-4 .banner-layer3 {
     background: url(../img/Banner_Services_couple_v2.png) no-repeat;
     position: absolute;
     bottom: 0px;
@@ -337,7 +337,7 @@ main::after {
 
 }
 
-#services .banner-main {
+.page-node-4 .banner-main {
     background-image: url(../img/Banner_Services_background_v2.jpg);
     background-repeat: no-repeat;
     background-position: 32% 60%;
@@ -366,7 +366,7 @@ main::after {
     position: absolute;
 }
 
-#about .banner {
+.page-node-1 .banner {
     min-height: 650px;
     height: 100%;
 }
@@ -454,11 +454,11 @@ main::after {
     border-radius: 0 10px 0 0;
 }
 
-#services .product-tab a {
+.page-node-4 .product-tab a {
     border-radius: 10px 10px 0 0;
 }
 
-#products .product-tab::before {
+.page-node-3 .product-tab::before {
     content: "";
     width: 0;
     height: 0;
@@ -482,11 +482,11 @@ main::after {
     border-radius: 10px 10px 0 0;
 }
 
-#services .service-tab a {
+.page-node-4 .service-tab a {
     border-radius: 0 10px 0 0;
 }
 
-#services .service-tab::before {
+.page-node-4 .service-tab::before {
     content: "";
     width: 0;
     height: 0;
@@ -911,7 +911,7 @@ footer .legal p {
         color: #fff;
     }
 
-    #home .banner-main {
+    .page-node-1 .banner-main {
         background-position: 20% 40%;
         left: 0;
     }
@@ -931,7 +931,7 @@ footer .legal p {
         color: #fff;
     }
 
-    #home .banner-layer2 {
+    .page-node-1 .banner-layer2 {
         background: url(../img/bg-layer2.png);
         background-repeat: no-repeat;
         background-position: -521px -722px;
@@ -940,26 +940,26 @@ footer .legal p {
         width: 100%;
     }
 
-    #home .banner-layer3 {
+    .page-node-1 .banner-layer3 {
         bottom: -20px;
         left: 2%;
         transform: scale(1);
     }
 
-    #about .banner-layer3 {
+    .page-node-1 .banner-layer3 {
         background-position: 15% 20%;
     }
 
-    #products .banner-layer3 {
+    .page-node-3 .banner-layer3 {
         background-size: cover;
         background-position: 32% 14%;
     }
 
-    #services .banner-main {
+    .page-node-4 .banner-main {
         background-position: 0% 35%;
     }
 
-    #services .banner-layer3 {
+    .page-node-4 .banner-layer3 {
         background-position: 15% 0%;
     }
 
@@ -1008,7 +1008,7 @@ footer .legal p {
         background-size: 100%;
     }
 
-    #home .banner-layer2 {
+    .page-node-1 .banner-layer2 {
         background-repeat: no-repeat;
         background-position: -421px -722px;
         position: absolute;
@@ -1016,18 +1016,18 @@ footer .legal p {
         width: 100%;
     }
 
-    #home .banner-layer3 {
+    .page-node-1 .banner-layer3 {
         position: absolute;
         bottom: -20px;
         left: 1%;
         transform: scale(1);
     }
 
-    #about .banner-layer3 {
+    .page-node-1 .banner-layer3 {
         background-position: 70% 20%;
     }
 
-    #services .banner-layer3 {
+    .page-node-4 .banner-layer3 {
         background-position: 100% 13%;
 
     }
@@ -1035,7 +1035,7 @@ footer .legal p {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #home .banner-layer3 {
+    .page-node-1 .banner-layer3 {
         left: 3%;
     }
 }

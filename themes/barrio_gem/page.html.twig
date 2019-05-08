@@ -82,11 +82,9 @@
   </div>
 {% endblock %}
 {% block content %}
-  <main {{content_attributes}}>
-      <section class="section">
-        <a id="main-content" tabindex="-1"></a>
-        {{ page.content }}
-      </section>
+  <main>
+    <a id="main-content" tabindex="-1"></a>
+    {{ page.content }}
   </main>
 {% endblock %}
 {% block footer %}
