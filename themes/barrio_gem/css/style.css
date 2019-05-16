@@ -180,6 +180,14 @@ main::after {
     z-index: 1;
 }
 
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
 .parallax {
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,9 +216,12 @@ main::after {
     top: 0px;
     left: 0px;
     position: absolute;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
 }
-
+#accordion a[aria-expanded="false"] h3::before {
+    content: "\f0da";
+}
 .left-gradient {
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
@@ -233,10 +244,6 @@ main::after {
     position: absolute;
 }
 
-#accordion span[aria-expanded="false"] h3::before {
-    content: "\f0da";
-}
-
 .toggle {
     position: relative;
     padding-right: 14px
@@ -247,7 +254,8 @@ main::after {
     top: -2px;
     right: 0px;
     position: absolute;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
 }
 
 .toggle[aria-expanded="true"]::after {
@@ -525,13 +533,14 @@ main::after {
 
 .sale-list li::before {
     position: absolute;
-    content: "\f054";
+    content: "\f105";
     font-size: 0.7em;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     top: 20px;
     left: -20px;
     color: rgb(231, 79, 61);
     color: rgb(var(--fire-orange));
+    font-weight: 600;
 }
 
 #service-content {
