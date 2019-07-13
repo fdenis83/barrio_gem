@@ -860,7 +860,19 @@ footer .legal p {
     color: #fff;
     font-size: 16px;
 }
-
+/*barrio over-ride */
+.site-footer .block{
+    margin:0;
+    border: none;
+    padding: 0;
+}
+.region-footer-second{
+    display: block;
+}
+.node__content {
+    font-size: inherit;
+    margin-top: 0px;
+}
 /* Small or default devices */
 @media (min-width: 576px) {
     #banner-upper {
